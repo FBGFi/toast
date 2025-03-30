@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example usage of Toast</title>
+</head>
+<script type="module">
+  import { ToastProvider } from "./src/index.js";
+  function addToast() {
+    ToastProvider.create({
+      header: "Header",
+      message: "Hello from toast!",
+      timeOut: 0
+    })
+  }
+  const button = document.createElement("button");
+  button.addEventListener("click", addToast);
+  button.innerHTML = "Add toast";
+  document.body.appendChild(button);
+</script>
+
+<body>
+</body>
+<style>
+  .toast__wrapper {
+    border: 1px solid #CCC;
+    margin: 5px;
+    padding: 5px;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .toast__header {
+    display: flex;
+    width: 100%;
+  }
+
+  .toast__header button {
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .toast__header button::after {
+    content: "❌";
+  }
+</style>
+
+</html>

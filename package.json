@@ -1,0 +1,19 @@
+{
+  "name": "@fbgfi/toast",
+  "version": "1.0.0",
+  "description": "Package for showing toast messages in websites.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src",
+    "prepare": "husky"
+  },
+  "author": "FBGFi",
+  "license": "ISC",
+  "devDependencies": {
+    "@fbgfi/eslint-config": "git+https://github.com/FBGFi/eslint-config",
+    "eslint": "^9.23.0",
+    "husky": "^9.1.7"
+  }
+}
