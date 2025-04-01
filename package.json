@@ -9,11 +9,20 @@
     "lint": "eslint src",
     "prepare": "husky"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FBGFi/toast"
+  },
   "author": "FBGFi",
   "license": "ISC",
   "devDependencies": {
     "@fbgfi/eslint-config": "git+https://github.com/FBGFi/eslint-config",
     "eslint": "^9.23.0",
     "husky": "^9.1.7"
+  },
+  "exports": {
+    ".": {
+      "default": "./src/index.js"
+    }
   }
 }
